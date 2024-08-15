@@ -1,30 +1,14 @@
-"use client";
+"use client"
 
-import React from "react";
-import { projects } from "../data/projects";
-import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import React from "react";
 
-const Page = ({ params }: { params: { id: string } }) => {
-  const idNumber = parseInt(params.id);
-  const currentData =
-    !isNaN(idNumber) && idNumber > 0 && idNumber <= projects.length
-      ? projects[idNumber - 1]
-      : null;
+type Props = {
+  currentData: any;
+};
 
-  if (!currentData) {
-    return (
-      <main className="flex min-h-screen flex-col items-center justify-center gap-y-10">
-        <h1 className="text-5xl font-semibold capitalize">Project not found</h1>
-        <Link href="/">
-          <button className="bg-[#7843E9] text-white p-4 px-12 lg:px-20 text-lg lg:text-xl font-semibold uppercase rounded-lg tracking-wider shadow-md">
-            Go Home
-          </button>
-        </Link>
-      </main>
-    );
-  }
-
+const Details = ({ currentData }: Props) => {
   return (
     <AnimatePresence mode="wait">
       <motion.main
@@ -62,13 +46,15 @@ const Page = ({ params }: { params: { id: string } }) => {
             <div className="w-4/5 lg:w-1/2 flex flex-col items-start gap-y-10">
               <h1 className="text-4xl font-bold">Project Overview</h1>
               <div className="flex flex-col gap-y-6">
-                {currentData.extendedDescription?.map((description, index) => {
-                  return (
-                    <p key={index} className="text-xl leading-8">
-                      {description}
-                    </p>
-                  );
-                })}
+                {currentData.extendedDescription?.map(
+                  (description: string, index: number) => {
+                    return (
+                      <p key={index} className="text-xl leading-8">
+                        {description}
+                      </p>
+                    );
+                  }
+                )}
               </div>
             </div>
             <div className="w-4/5 lg:w-1/2 flex flex-col items-start gap-y-10">
@@ -100,4 +86,4 @@ const Page = ({ params }: { params: { id: string } }) => {
   );
 };
 
-export default Page;
+export default Details;
