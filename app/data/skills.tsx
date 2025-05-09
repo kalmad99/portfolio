@@ -1,4 +1,6 @@
 export const skills = [
+  "Wordpress",
+  "Elementor",
   "HTML",
   "CSS",
   "Javascript",
@@ -10,6 +12,7 @@ export const skills = [
   "NodeJs",
   "NestJs",
   "FastAPI",
+  "Django",
   "SQL",
   "SQLAlchemy",
   "UI/UX",

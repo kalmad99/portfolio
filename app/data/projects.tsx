@@ -82,13 +82,41 @@ export const projects = [
       "This system significantly improves operational efficiency by streamlining various processes, integrating multiple systems, and centralizing all project-related information.",
       "My contributions focused on ensuring that the backend architecture was robust, scalable, and capable of handling complex data interactions, ultimately leading to better project outcomes and more efficient management across the board.",
     ],
-    toolsUsed: [
-      "Flutter",
-      "NestJs",
-      "PostgreSQL",
-      "GraphQL",
-      "Github",
-      "AWS",
+    toolsUsed: ["Flutter", "NestJs", "PostgreSQL", "GraphQL", "Github", "AWS"],
+  },
+  {
+    id: 6,
+    name: "Micro-Loan Service Dashboard",
+    link: "",
+    image: "/mockups/digital_loan_mockup_xl.png",
+    extendedImage: "/mockups/digital_loan_mockup_xl.png",
+    description:
+      "I contributed to the development of a powerful internal dashboard used by financial officers to manage merchants, assess creditworthiness, and verify device loan requests within a micro-loan ecosystem.",
+    extendedDescription: [
+      "As a senior frontend engineer, I worked on building and refining an internal dashboard tailored for managing digital loan services at scale.",
+      "The dashboard enables financial officers to review merchant histories, monitor loan and transfer activity, approve or reject device requests with identity verification, and interact with credit scoring insights.",
+      "I implemented complex UI flows, built modular components, and introduced enhancements that streamlined workflows — including data visualizations.",
+      "I also integrated secure data access based on dynamic role-based permissions using realm-based access control from authentication payloads.",
     ],
+    toolsUsed: [
+      "NextJs",
+      "Django",
+      "TailwindCSS"
+    ],
+  },
+  {
+    id: 7,
+    name: "Bilo's Pastry Website",
+    link: "https://bilospastry.com/",
+    image: "/mockups/bilos_mockup_xl.png",
+    extendedImage: "/mockups/bilos_mockup_2_xl.png",
+    description:
+      "I developed a sleek, responsive website for Bilo's Pastry to showcase their product catalog, improve local SEO, and drive in-store traffic through an engaging digital presence.",
+    extendedDescription: [
+      "I built a custom marketing website for Bilo’s Pastry, a growing bakery brand, using Elementor and WordPress for fast deployment and user-friendly content management.",
+      "The site is SEO-optimized and mobile-responsive, helping increase visibility among local customers and drive foot traffic to physical locations.",
+      "I focused on delivering a design that reflected the brand’s charm while ensuring performance, usability, and maintainability through clean code and structured templates.",
+    ],
+    toolsUsed: ["WordPress", "Elementor", "SEO Tools", "Figma"],
   },
 ];
